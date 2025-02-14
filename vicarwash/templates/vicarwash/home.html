@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vi Car Wash</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+        integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"     
+        integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+        <link rel="stylesheet" href="{% static "global/css/styles.css" %}">
+
+    
+</head>
+<body>
+
+    <header class="main-header-container">
+        <div class=" main-header container" >
+            <h1 class="logo">
+                Vi Car Wash <i class="fas fa-car"></i>
+            </h1>
+
+            <form class="search-form" action="" method="GET">
+                <input type="text" name="q" placeholder="Digite o que você procura" class="search-input">
+                <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
+            </form>
+            
+            <div class="header-icons">
+                <a href="#"><i class="fas fa-user"></i> Login</a>
+                <a href="#"><i class="fas fa-user-plus"></i> Cadastro</a>
+                <a href="#"><i class="fas fa-envelope"></i> Fale Conosco</a>
+                <a href="#"><i class="fas fa-shopping-cart"></i> Carrinho</a>
+            </div>
+        </div>       
+    </header>
+    
+</body>
+</html>
