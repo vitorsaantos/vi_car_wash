@@ -5,7 +5,7 @@ body {
 }
 
 .logo {
-    color: #27EF6D;
+    color: #B4121B;
     
 }
 .main-header-container {
@@ -46,7 +46,7 @@ body {
     right: 0;
     top: 0;
     bottom: 0;
-    background-color: #27EF6D;
+    background-color: #B4121B;
     color: white;
     border: none;
     padding: 0 18px;
@@ -63,13 +63,15 @@ body {
 }
 
 .header-icons a {
-    color: #27EF6D;
+    color: #B4121B;
     text-decoration: none;
     margin-left: 20px;
     display: flex;
     align-items: center;
+    font-size: 18px;
 }
 
 .header-icons a i {
     margin-right: 5px;
+    font-size: 18px;
 }
