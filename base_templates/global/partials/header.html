@@ -1,23 +1,19 @@
+{% load static %}
 <header class="main-header-container">
-    <div class=" main-header container" >
-        <h1 class="logo">
-            Vi Car Wash <i class="fas fa-car"></i>
-        </h1>
+    <div class="logo-container">
+        <a href="/">
+            <img src="{% static 'global/images/logo.png' %}" alt="Vicar Wash Logo" class="logo">
+        </a>
+    </div>
 
-        <form class="search-form" action="" method="GET">
-            <input type="text" name="q" placeholder="Digite o que você procura" class="search-input">
-            <button type="submit" class="search-button"><i class="fas fa-search"></i></button>
-        </form>
-        
-        <div class="header-icons">
-            {% if user.is_authenticated %}
-                <a href="{% url 'logout' %}"><i class="fas fa-sign-out-alt"></i> Logout</a>
-            {% else %}
-                <a href="{% url 'login' %}"><i class="fas fa-user"></i> Login</a>
-                <a href="{% url 'register' %}"><i class="fas fa-user-plus"></i> Cadastro</a>
-            {% endif %}
-            <a href="#"><i class="fas fa-envelope"></i> Fale Conosco</a>
-            <a href="{% url 'cart_detail' %}"><i class="fas fa-shopping-cart"></i> Carrinho</a>
-        </div>
-    </div>       
+    <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="/about">Sobre Nós</a></li>
+          <li><a href="/products">Produtos</a></li>
+          <li><a href="https://whatsa.me/5548984045568">Contato</a></li>
+          <li><a href="https://www.instagram.com/vicar_wash/">Instagram</a></li>
+        </ul>
+      </nav>
 </header>
+
+
