@@ -6,17 +6,38 @@
         <p>Conheça nossos produtos que utilizamos em seu veiculo.</p>
     </div>
 
-    <div class="slider-content">
-        <img class="selected" src="{% static 'global/images/delet.png' %}" alt="delet">
-        <img src="{% static 'global/images/v-mol.png' %}" alt="v-mol"> 
-        <img src="{% static 'global/images/v-floc.webp' %}" alt="v-floc">
-        <img class="selected" src="{% static 'global/images/glazy.png' %}" alt="delet">
-        <img src="{% static 'global/images/intense.png' %}" alt="v-mol"> 
-        <img src="{% static 'global/images/prizm.png' %}" alt="v-floc"> 
-        <img class="selected" src="{% static 'global/images/restaurax.png' %}" alt="delet">
-        <img src="{% static 'global/images/shiny.png' %}" alt="v-mol"> 
-        <img src="{% static 'global/images/sintra.png' %}" alt="v-floc"> 
+    <div class="product-container">
+        <div class="product-container-header">
+            <div class="product-item">
+                <img src="{% static 'global/images/intense.png' %}" alt="V-FLOC">
+                <div class="product-desc">
+                    <h2>Intense</h2>
+                    <p>Intense é um renovador de plásticos com proteção UV, de fácil aplicação. 
+                        Sua fórmula balanceada promove acabamento natural e toque seco, 
+                        com durabilidade de até 6 meses.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'global/images/shiny.png' %}" alt="V-MOL">
+                <div class="product-desc">
+                    <h2>Shiny</h2>
+                    <p>Shiny é o produto ideal para manter a beleza e brilho dos pneus de seu veículo. 
+                        Desenvolvido exclusivamente pela Vonixx, 
+                        sua fórmula única protege e revitaliza a borracha dos pneus, mantendo seu brilho por mais tempo.</p>
+                </div>
+            </div>
+            <div class="product-item">
+                <img src="{% static 'global/images/restaurax.png' %}" alt="delet">
+                <div class="product-desc">
+                    <h2>Restaurax</h2>
+                    <p>Restaurax renova e restaura superfícies plásticas, como para-choques, painéis e laterais de portas.
+
+                    Feito para quem deseja restaurar as partes plásticas do carro e deixá-las sempre com aparência de novo. 
+                    Sua fórmula contém polímeros especiais que também protegem as peças contra as ações do tempo, dá brilho e evita a degradação precoce do material.</p>
+                </div>
+            </div>
+        </div>
     </div>
 </div>
-
+    
 <script src="{% static 'global/js/script.js' %}"></script>

@@ -66,27 +66,46 @@ body {
     background-color: #342454
 }
 
-.slider-content {
-    background-color: #bcbcc4;
+.product-container-header {
+    display: flex;
+    gap: 225px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    margin: 0 auto;
+}
+
+.product-item {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 75px 75px;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-item img {
     width: 100%;
-    height: 550px;
-    position: relative;
-
-}
-
-.slider-content img {
-    width: 285px;
-    height: auto;
-    position: absolute;
+    max-width: 155px;
+    height: 480px;
     object-fit: cover;
-    opacity: 0;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
 
-.slider-content img.selected {
-    opacity: 1;
+.product-desc h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #f3f3fb;
 }
 
-
+.product-desc p {
+    color: #f3f3fb;
+    font-size: 1em;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+}
 
 
  /* Service Section */
@@ -98,43 +117,47 @@ body {
     background-color: #342454
 }
 
-.container-service-description {
-    width: 100%;
-    overflow: hidden;
-    background-color: #bcbcc4;
-   
-}
-.service-description-text {
+.service-container-header {
     display: flex;
-    width: max-content;
-    animation: scroll 20s linear infinite;
-    gap: 15px;
-    padding: 15px 80px;
+    gap: 225px;
+    justify-content: center;
+    flex-wrap: wrap; /* Permite quebrar linha em telas menores */
+    margin: 0 auto;
+}
+
+.service-item {
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 75px 75px;
+    max-width: 425px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-service-description img {
     align-items: center;
     justify-content: center;
-    cursor: pointer;
-    animation-delay: var(--delay);
+    display: flex;
+    margin: 10px auto;
+    width: 100%;
+    max-width: 325px;
+    height: 255px;
+    object-fit: cover;
+    border-radius: 8px;
 }
-
-
-.service-description-text:hover {
-    animation-play-state: paused;
+.service-desc h2 {
+    text-align: center;
+    margin-bottom: 8px;
+    color: #f3f3fb;
 }
-
-.service-description-text img {
-    width: 280px;
-    height: auto;
+.service-desc p {
+    color: #f3f3fb;
+    font-size: 1em;
+    padding: 10px;
     border-radius: 5px;
+    text-align: center;
 }
 
-@keyframes scroll {
-  0% {
-    transform: translateX(150%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 
 .container-footer {
     background-color: #342454;
